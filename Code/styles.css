@@ -7,7 +7,7 @@
 .header {
   background-color: rgb(12, 34, 66);
   position: fixed;
-  width: 100vw;
+  min-width: 100vw;
   min-height: 10vh;
   padding: 15px;
   display: flex;
@@ -125,4 +125,50 @@ img {
     font-weight: bold;
     text-align: center;
     margin: 10px;
+    text-align: center;
+}
+.btn-list{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 10px;
+}
+@media (max-width: 468px){
+  .nav-list{
+    display: none;
+  }
+  .nav-title{
+    font-size: 2rem;
+  }
+  .btn-list{
+    display: flex;
+  }
+  .products-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .box{
+    width: 90vw;
+    height: 40vh;
+    text-align: center;
+  }
+  .box .product-name{
+    font-size: 1.9rem;
+  }
+  .product{
+    width: 100%;
+  }
+  .main .title-homepage .first-title{
+    font-size: 2rem;
+  }
+  .footer .container p{
+    font-size: 0.8rem;
+    margin: 7px;
+  }
+  .footer .container a{
+    font-size: 0.6rem;
+  }
 }
