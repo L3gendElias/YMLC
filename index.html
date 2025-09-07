@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>YMLC | Home</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
-            <h2 class="nav-title">Botanas YMLC</h2>
+            <div class="container-nav">
+                <h2 class="nav-title">Botanas YMLC</h2>
+                <div class="btn-list" id="btn-list">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
             <ul class="nav-list">
-                <li class="list--item"><a href="index.html" class="nav--link">Inicio</a></li>
+                <li class="list--item"><a href="index.html" class="nav--link active-link">Inicio</a></li>
                 <li class="list--item"><a href="Catalog/catalog.html" class="nav--link">Productos</a></li>
                 <li class="list--item"><a href="About/aboutus.html" class="nav--link">Acerca de</a></li>
                 <li class="list--item"><a href="Order/order.html" class="nav--link">Haz tu pedido</a></li>
             </ul>
-            <div class="btn-list" id="btn-list">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         </nav>
     </header>
     <main class="main">
@@ -29,33 +35,39 @@
         <article class="products-container">
             <section class="product" onclick="changeToCatalog()">
                 <div class="box">
-                <img src="../Media/CacahuatesGarapinadosV1.png" alt="Cacahuates Garapiñados (Previsualización)" onclick="changeToCatalog()">
-                <h2 class="product-name product1">Cacahuates garapiñados</h2>
-                <p class="product-price productprice1">$15.00 MXN</p>
+                    <img src="../Media/CacahuatesGarapinadosV1.png" alt="Cacahuates Garapiñados (Previsualización)"
+                        onclick="changeToCatalog()">
+                    <h2 class="product-name product1">Cacahuates garapiñados</h2>
+                    <p class="product-price productprice1">$15.00 MXN</p>
                 </div>
             </section>
             <section class="product" onclick="changeToCatalog()">
                 <div class="box">
-                <img src="../Media/CacahuatesSaladosV1.png" alt="Cacahuates Salados (Previsualización)" onclick="changeToCatalog()">
-                <h2 class="product-name product2">Cacahuates salados</h2>
-                <p class="product-price productprice2">$15.00 MXN</p>
+                    <img src="../Media/CacahuatesSaladosV1.png" alt="Cacahuates Salados (Previsualización)"
+                        onclick="changeToCatalog()">
+                    <h2 class="product-name product2">Cacahuates salados</h2>
+                    <p class="product-price productprice2">$15.00 MXN</p>
                 </div>
             </section>
             <section class="product">
                 <div class="box">
-                <img src="../Media/TakisV1.webp" alt="Mini Takis Fuego (Previsualización)" onclick="changeToCatalog()">
-                <h2 class="product-name product3">Mini Takis</h2>
-                <p class="product-price productprice3">$15.00 MXN</p>
+                    <img src="../Media/TakisV1.webp" alt="Mini Takis Fuego (Previsualización)"
+                        onclick="changeToCatalog()">
+                    <h2 class="product-name product3">Mini Takis</h2>
+                    <p class="product-price productprice3">$15.00 MXN</p>
                 </div>
             </section>
         </article>
     </main>
     <footer class="footer">
         <div class="container">
-        <p><span class="company">YMLC&copy;</span> Todos los derechos reservados</p>
-        <p>Página elaborada por: <strong>JEBM WebStudio</strong></p>
-        <p><a href="Declaration/declaration.html" target="_blank" rel="noreferrer noopener nofollow"> Términos y condiciones</a></p>
+            <p><span class="company">YMLC&copy;</span> Todos los derechos reservados</p>
+            <p>Página elaborada por: <strong>JEBM WebStudio</strong></p>
+            <p><a href="Declaration/declaration.html" target="_blank" rel="noreferrer noopener nofollow"> Términos y
+                    condiciones</a></p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
