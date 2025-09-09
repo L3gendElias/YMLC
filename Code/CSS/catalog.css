@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.title-catalog {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.full-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.products-row {
+  display: contents;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  background-color: #dab88d;
+  width: 100%;
+  max-width: 60vw;
+  height: 50vh;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.product-title, .product-name {
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: 'Story Script';
+  font-size: 2rem;
+}
+
+.product-description {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+img{
+  max-width: 10vw;
+  border-radius: 50%;
+  margin: 10px;
+}
+.footer{
+  background-color: #090b27;
+  color: ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  text-align: center;
+}
+.footer ul{
+  list-style: none;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .main{
+    padding-top: 20vh;
+  }
+  .full-products-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  .footer{
+    font-size: 0.6rem;
+  }
+}

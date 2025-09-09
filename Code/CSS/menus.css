@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+a.active-link {
+  text-decoration: underline;
 }
 .header {
   background-color: rgb(12, 34, 66);
@@ -40,10 +37,7 @@
   padding: 10px;
   border-radius: 10px;
 }
-a.active-link{
-  text-decoration: underline;
-}
-.nav--link:hover{
+.nav--link:hover {
   color: #191e63;
   background-color: ghostwhite;
 }
@@ -52,7 +46,7 @@ a.active-link{
   font-family: "Story Script";
   font-size: 2rem;
 }
-.btn-list{
+.btn-list {
   display: none;
   justify-content: center;
   align-items: center;
@@ -61,40 +55,41 @@ a.active-link{
   width: 10vw;
   border-radius: 10px;
 }
-@media (max-width: 468px){
-    .header{
+
+@media (max-width: 768px) {
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nav-list{
+  .nav-list {
     display: none;
   }
-  .nav-title{
+  .nav-title {
     font-size: 2rem;
   }
-  .nav-title{
+  .nav-title {
     display: none;
   }
-  .nav{
+  .nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
   }
-  .container-nav{
+  .container-nav {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .nav-list.active{
+  .nav-list.active {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .btn-list{
+  .btn-list {
     position: absolute;
     display: flex;
     width: 30%;
