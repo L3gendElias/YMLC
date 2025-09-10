@@ -5,3 +5,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    min-height: 100vh;
+}
+.main-container {
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-window{
+    min-width: 80vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0;
+}
+.product-box{
+    height: 45vh;
+    width: 77vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00f;
+}
+img{
+    max-width: 10vw;
+}
