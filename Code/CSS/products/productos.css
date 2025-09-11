@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+.main-container {
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-window{
+    min-width: 80vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 201, 159);
+    border-radius: 10px;
+}
+.product-box{
+    height: 45vh;
+    width: 77vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+.texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.texto .product-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1vh;
+}
+#title1{
+    color: rgb(90, 0, 174);
+}
+#title2, #title3{
+    color: rgb(188, 103, 42);
+}
+.title2, .title3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1vh;
+    color: rgb(211, 164, 111);
+}
+.imagen img{
+    height: auto;
+    max-width: 20vw;
+}
+@media screen and (max-width: 768px){
+    .product-window{
+        max-width: 70vw;
+        height: 70vh;
+        margin-top: 10vh;
+    }
+    .product-box{
+        flex-direction: column;
+        height: max-content;
+        width: fit-content;
+    }
+    .imagen img{
+        max-width: 50vw;
+        margin-bottom: 2vh;
+    }
+    .texto{
+        width: 90%;
+    }
+    .texto .product-title{
+        font-size: 1.8rem;
+    }
+    
+}
