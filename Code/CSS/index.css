@@ -91,7 +91,7 @@ img {
     text-align: center;
 }
 
-@media (max-width: 468px){
+@media (max-width: 768px){
   
   .products-container{
     grid-template-columns: 1fr;
