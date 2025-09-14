@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/order.css">
+    <link rel="stylesheet" href="../../CSS/menus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Haz tu pedido</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container-nav">
+                <h2 class="nav-title">Botanas YMLC</h2>
+                <div class="btn-list" id="btn-list">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li class="list--item"><a href="../../../index.html" class="nav--link">Inicio</a></li>
+                <li class="list--item"><a href="/Code/HTML/Catalog/catalog.html" class="nav--link">Productos</a></li>
+                <li class="list--item"><a href="/Code/HTML/About/about.html" class="nav--link">Acerca de</a>
+                </li>
+                <li class="list--item"><a href="/Code/HTML/Order/order.html" class="nav--link active-link">Haz tu
+                        pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="container">
+            <form action="https://formsubmit.co/botanasymlc@gmail.com" method="POST" class="form">
+                <fieldset>
+                    
+                    <legend>Datos de contacto</legend>
+                    <div class="contenedor">
+                    <label for="name">
+                        NOMBRE:
+                        <input type="text" name="NOMBRE:" placeholder="Juanito" id="name" required>
+                    </label>
+                    <label for="salon">
+                        SALON: 
+                        <input type="text" name="SALON:" placeholder="1*B" id="salon" required>
+                    </label>
+                    <label for="pedido">
+                        PEDIDO:
+                        <textarea name="PEDIDO: " id="pedido" required>
+
+                        </textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Enviar" id="btn-enviar">
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <script src="../../JavaScript/menu.js"></script>
+</body>
+
+</html>
